@@ -1,0 +1,142 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  .Header {
+    display: flex;
+
+    margin-top: 10px;
+    width: 100%;
+
+    justify-content: space-between;
+
+    div {
+      align-items: center;
+      display: flex;
+    }
+
+    p {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .Profile {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    .image {
+      img {
+        margin-top: 60px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin-bottom: 18px;
+      }
+    }
+
+    .text_container_info {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 40px;
+
+      .container_info {
+        display: flex;
+
+        color: #fff;
+
+        flex-direction: column;
+        align-items: center;
+
+        strong {
+          margin-bottom: 6px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .button {
+    height: 46px;
+    width: 196px;
+    border-radius: 20px;
+    background-color: #315b79;
+    margin-bottom: 18px;
+
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 18px;
+
+    .card {
+      height: 95px;
+      width: 156px;
+      color: #4c94c6;
+
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: #121b24;
+
+      .card_info_text {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .card_info_status {
+        background-color: #1a5889;
+
+        height: 19px;
+        width: 39px;
+
+        color: #fff;
+        font-size: 10px;
+
+        border-radius: 4px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: -40px;
+
+        svg {
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
